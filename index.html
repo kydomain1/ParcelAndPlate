@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParcelAndPlate - Your Lifestyle Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" id="logo"><a href="index.html">ParcelAndPlate</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html" data-filter="clothing">Clothing & Accessories</a></li>
+                        <li><a href="index.html" data-filter="health">Health & Beauty</a></li>
+                        <li><a href="index.html" data-filter="home-garden">Home & Garden</a></li>
+                        <li><a href="index.html" data-filter="travel">Travel & Accommodation</a></li>
+                        <li><a href="index.html" data-filter="finance">Finance & Insurance</a></li>
+                        <li><a href="index.html" data-filter="food">Food & Beverage</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Search articles...">
+                    <button class="search-btn" aria-label="Search">Search</button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">FB</a>
+                    <a href="https://www.instagram.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">IG</a>
+                    <a href="https://www.twitter.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">TW</a>
+                    <a href="https://www.linkedin.com/company/parcelandplate" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">LI</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Your Lifestyle</h1>
+                <p class="hero-subtitle">Explore the latest trends in fashion, health, home, travel, finance, and food</p>
+            </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section class="category-filter">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="clothing">Clothing & Accessories</button>
+                <button class="filter-btn" data-category="health">Health & Beauty</button>
+                <button class="filter-btn" data-category="home-garden">Home & Garden</button>
+                <button class="filter-btn" data-category="travel">Travel & Accommodation</button>
+                <button class="filter-btn" data-category="finance">Finance & Insurance</button>
+                <button class="filter-btn" data-category="food">Food & Beverage</button>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-section">
+            <div class="articles-container" id="articlesContainer">
+                <!-- Articles will be dynamically loaded -->
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="pagination-section">
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be dynamically generated -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ParcelAndPlate</h3>
+                    <p>Your trusted source for lifestyle inspiration and product recommendations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="index.html" data-filter="clothing">Clothing & Accessories</a></li>
+                        <li><a href="index.html" data-filter="health">Health & Beauty</a></li>
+                        <li><a href="index.html" data-filter="home-garden">Home & Garden</a></li>
+                        <li><a href="index.html" data-filter="travel">Travel & Accommodation</a></li>
+                        <li><a href="index.html" data-filter="finance">Finance & Insurance</a></li>
+                        <li><a href="index.html" data-filter="food">Food & Beverage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:info@parcelandplate.com">info@parcelandplate.com</a></p>
+                    <p>Phone: <a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+                    <p>245 Park Avenue, Suite 1200<br>New York, NY 10167</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook">FB</a>
+                        <a href="https://www.instagram.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram">IG</a>
+                        <a href="https://www.twitter.com/parcelandplate" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter">TW</a>
+                        <a href="https://www.linkedin.com/company/parcelandplate" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn">LI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ParcelAndPlate. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

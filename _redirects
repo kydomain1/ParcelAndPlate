@@ -1,0 +1,9 @@
+# Cloudflare Pages 重定向规则
+# 确保所有页面都能正确加载
+
+# 如果访问根目录，显示 index.html
+/    /index.html    200
+
+# 404 错误时重定向到首页（可选）
+# /404.html    /index.html    404
+
